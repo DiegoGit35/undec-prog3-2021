@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Aeropuerto" />
         <module name="SOLID" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Aeropuerto" target="8" />
       <module name="SOLID" target="8" />
     </bytecodeTargetLevel>
   </component>
