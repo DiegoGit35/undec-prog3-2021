@@ -45,4 +45,19 @@ public class Aerolinea {
 
     public void setFecha(int anio, int mes, int dia) {
     }
+
+    public void addPiloto(Piloto p) {
+    }
+
+    public int cantPilotos() {
+    }
+
+    public List<Piloto> getPilotos() {
+    }
+
+    public List<Piloto> buscarPilotoxCuil(String cuil) {
+    }
+
+    public List<Piloto> buscarPilotoxApellido(String apellido) {
+    }
 }
