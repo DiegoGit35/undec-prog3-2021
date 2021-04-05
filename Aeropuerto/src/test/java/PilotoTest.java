@@ -15,7 +15,7 @@ class PilotoTest {
     List<Piloto> listaPilotos = new ArrayList<Piloto>();
     Piloto p = new Piloto("30-64140555-4", 1234321, "estrada", "Diego", f1, RolTripulacion.PILOTO);
     Piloto p2 = new Piloto("30-64140341-2", 1234312, "perez", "jose", f2, RolTripulacion.PILOTO);
-    Piloto p3 = new Piloto("30-64149492-3", 1234353, "jimenez", "pedro", f3, RolTripulacion.PILOTO);
+    Piloto p3 = new Piloto("30-64149492-3", 1234353, "jimenez", "pedro", f3, RolTripulacion.COPILOTO);
 
 //  Cargar un piloto nuevo
     @Test
