@@ -1,14 +1,9 @@
 package OpenClosedPrinciple;
 
-public class MergeSort extends Ordenador{
-
-    public MergeSort(){
-        super.tipo = TipoSort.MERGESORT;
-
-    }
+public class MergeSort implements Ordenador{
 
     @Override
-    protected void ordenar() {
+    public void ordenar() {
         System.out.println("ordenado por MergeSort...");
     }
 }

@@ -1,13 +1,8 @@
 package OpenClosedPrinciple;
 
-public class InsertionSort extends Ordenador{
-    public InsertionSort(){
-        super.tipo = TipoSort.INSERTIONSORT;
-
-    }
-
+public class InsertionSort implements Ordenador{
     @Override
-    protected void ordenar() {
+    public void ordenar() {
         System.out.println("ordenado por InstertionSort...");
     }
 }

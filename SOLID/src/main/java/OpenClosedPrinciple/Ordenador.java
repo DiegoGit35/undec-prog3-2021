@@ -1,6 +1,5 @@
 package OpenClosedPrinciple;
 
-public abstract class Ordenador {
-    protected TipoSort tipo;
-    protected abstract void ordenar();
+public interface Ordenador {
+    public void ordenar();
 }
