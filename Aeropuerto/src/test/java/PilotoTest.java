@@ -16,6 +16,7 @@ class PilotoTest {
     Piloto p = new Piloto("30-64140555-4", 1234321, "estrada", "Diego", f1, RolTripulacion.PILOTO);
     Piloto p2 = new Piloto("30-64140341-2", 1234312, "perez", "jose", f2, RolTripulacion.PILOTO);
     Piloto p3 = new Piloto("30-64149492-3", 1234353, "jimenez", "pedro", f3, RolTripulacion.COPILOTO);
+    Piloto p4 = new Piloto("30-64134595-3", 1234353, "perez", "pedro", f3, RolTripulacion.COPILOTO);
 
 //  Cargar un piloto nuevo
     @Test
@@ -54,8 +55,9 @@ class PilotoTest {
         aerolinea.addPiloto(p);
         aerolinea.addPiloto(p2);
         aerolinea.addPiloto(p3);
+        aerolinea.addPiloto(p4);
         listaPilotos.add(p2);
-        listaPilotos.add(p3);
-        assertEquals(listaPilotos, aerolinea.buscarPilotoxApellido("Perez"));
+        listaPilotos.add(p4);
+        assertEquals(listaPilotos, aerolinea.buscarPilotoxApellido("perez"));
     }
 }
