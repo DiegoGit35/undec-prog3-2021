@@ -3,16 +3,12 @@ package DependecyInversionPrinciple;
 public class App {
 
     public static void main(String[] args){
-        DBHandler dbHandler = new DBHandler();
+        DBHandler dbHandler = new DBHandler(new OracleDatabase());
         dbHandler.Conectar();
         dbHandler.Desconectar();
     }
 }
 
-//  esta implementacion de conexion con un base de datos es muy rigida
-//  el DBHandler es una clase de alto nivel atada a la implementacion
-//  de MySQL, por lo que si queremos cambiar de base de datos deberiamos
-//  hacer muchos cambios en el codigo
-//  el DBHandler no deberia saber sobre la base de datos MySQL, por lo
-//  que deberiamos crear una abstraccion que se encargue de invertir esa
-//  dependencia
+//  de esta forma el DBHandler no sabe sobre la implementacion concreta
+//  del tipo de base de datos, solo sabe que va a ser una base de datos
+//  de la misma forma MySQL y Oracle no saben sobre DBHandler

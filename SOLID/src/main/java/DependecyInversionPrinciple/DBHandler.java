@@ -1,15 +1,16 @@
 package DependecyInversionPrinciple;
 
 public class DBHandler {
-    private MySQLDatabase mySQLDatabase;
-    public DBHandler(){
-        this.mySQLDatabase = new MySQLDatabase();
+    private BaseDeDatos baseDeDatos;
+
+    public DBHandler(BaseDeDatos baseDeDatos){
+        this.baseDeDatos = new MySQLDatabase();
     }
 
     public void Conectar(){
-        mySQLDatabase.connect();
+        baseDeDatos.connect();
     }
     public void Desconectar(){
-        mySQLDatabase.disconnect();
+        baseDeDatos.disconnect();
     }
 }
