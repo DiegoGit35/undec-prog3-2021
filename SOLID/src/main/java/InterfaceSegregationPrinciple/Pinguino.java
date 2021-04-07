@@ -1,10 +1,6 @@
 package InterfaceSegregationPrinciple;
 
-public class Pinguino implements Ave{
-    @Override
-    public void volar() {
-        System.out.println("el piinguino es demasido pesado para volar... Vuelo cancelado");
-    }
+public class Pinguino implements AnimalNadador, AnimalCazador {
 
     @Override
     public void cazar() {

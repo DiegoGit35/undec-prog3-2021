@@ -4,13 +4,15 @@ package InterfaceSegregationPrinciple;
 
 public class App {
     public static void main(String[] args){
-        Ave aguila = new Aguila();
-        Ave pinguino = new Pinguino();
+        Aguila aguila = new Aguila();
+        Pinguino pinguino = new Pinguino();
         aguila.cazar();
-        pinguino.volar();
+        pinguino.nadar();
+        aguila.volar();
+        pinguino.cazar();
     }
 }
 
-//  en este ejemplo las clases aguila y pinguino implementa una interfaz en comun,
-//  pero esta interfaz contiene metodos que no se adaptan muy bien a los distintos
-//  necesidades de los implementarios
+//  la solucion a este problema fue dividir una interface con varios metodos
+//  en varias interfaces con metodos menos metodos. asi logramos que las
+//  implementaciones de interfaces sean mas adecuadas

@@ -1,6 +1,5 @@
 package InterfaceSegregationPrinciple;
 
-public interface Ave {
-    public void volar();
+public interface AnimalCazador {
     public void cazar();
 }
