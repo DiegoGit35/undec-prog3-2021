@@ -1,6 +1,6 @@
 package LiskovSubstitutionPrinciple;
 
-public interface Vehiculo {
+public interface VehiculoNormal {
     public void acelerar();
     public void cargarCombustible();
 }

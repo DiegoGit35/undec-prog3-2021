@@ -1,6 +1,6 @@
 package LiskovSubstitutionPrinciple;
 
-public class Auto implements Vehiculo{
+public class Auto implements VehiculoNormal{
 
     @Override
     public void acelerar() {

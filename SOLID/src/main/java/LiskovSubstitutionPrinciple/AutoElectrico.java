@@ -1,6 +1,6 @@
 package LiskovSubstitutionPrinciple;
 
-public class AutoElectrico implements Vehiculo{
+public class AutoElectrico implements VehiculoElectrico{
 
     @Override
     public void acelerar() {
@@ -8,7 +8,7 @@ public class AutoElectrico implements Vehiculo{
     }
 
     @Override
-    public void cargarCombustible() {
-//        throw exception
+    public void cargarBaterias() {
+        System.out.println("Cargando baterías...");
     }
 }
