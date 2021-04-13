@@ -8,3 +8,7 @@ public class App {
         libro.guardar();
     }
 }
+
+/**
+ * Bien aplicado el principio aqui.
+ */

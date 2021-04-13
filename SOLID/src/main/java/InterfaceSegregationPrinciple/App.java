@@ -16,3 +16,7 @@ public class App {
 //  la solucion a este problema fue dividir una interface con varios metodos
 //  en varias interfaces con metodos menos metodos. asi logramos que las
 //  implementaciones de interfaces sean mas adecuadas
+
+/**
+ * Bien aplicado el principio aqui.
+ */

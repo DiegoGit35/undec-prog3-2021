@@ -17,3 +17,7 @@ public class App {
 
 //    con esta nueva implementacion podemos añadir nuevos tipos de ordenamientos
 //    sin necesidad de modificar el codigo
+
+/**
+ * Bien aplicado el principio aqui.
+ */

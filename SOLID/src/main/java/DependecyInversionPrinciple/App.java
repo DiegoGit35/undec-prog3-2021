@@ -12,3 +12,8 @@ public class App {
 //  de esta forma el DBHandler no sabe sobre la implementacion concreta
 //  del tipo de base de datos, solo sabe que va a ser una base de datos
 //  de la misma forma MySQL y Oracle no saben sobre DBHandler
+
+/**
+ * Parcialmente bien aplicado el principio aqui. En el constructor de DBHandler, has puesto forzado que use
+ * MySQLDatabase, en lugar del parámetro enviado.
+ */
